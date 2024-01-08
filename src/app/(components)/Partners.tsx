@@ -1,9 +1,7 @@
 "use client"
 
-import React, { useEffect, useLayoutEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
-
-import gsap from 'gsap'
 
 import mandiri from '@/assets/partners/mandiri.svg'
 import nike from '@/assets/partners/nike.svg'
