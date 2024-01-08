@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Services = () => {
   return (
-    <div className=' max-h-max w-[100%] py-4 pt-14 px-6 flex justify-start items-center flex-col overflow-hidden mx-auto'>
+    <div className=' max-h-max w-[90%] py-4 pt-14 px-6 flex justify-start items-center flex-col overflow-hidden mx-auto'>
         <div className='w-[80%] flex justify-center items-center'>
             <div className='flex justify-center items-center flex-col text-tertiary'>
                 <p className='font-poppins font-semibold text-tertiary text-[3rem]'>Alchemyst AI Services</p>
@@ -41,7 +41,7 @@ interface CardPropsType {
 
 const CardComponent = (cardProps :CardPropsType ) => {
     return (
-        <div className='max-w-[25rem] min-h-max flex justify-center items-center flex-col gap-3 rounded-xl hover:shadow-cardshadow py-6 border-[1px] border-secondary'>
+        <div className='max-w-[25rem] min-h-max flex justify-center items-center flex-col gap-3 rounded-xl hover:shadow-cardshadow py-6 hover:transition-shadow'>
             <div className='w-full flex items-baseline justify-start py-3 px-3'>
                 <Image src={cardProps.image} width={10} height={10} alt='icon' className='w-16 h-16 bg-action rounded-lg' />
             </div>

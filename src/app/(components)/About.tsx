@@ -12,13 +12,13 @@ const About = () => {
 
   
   return (
-    <div className='flex justify-center items-center py-6 px-4 h-full w-[100%] mx-auto'>
-        <div className='flex-1 py-8'>
-          <div className='text-6xl font-semibold font-urbanist px-5 flex justify-center items-baseline pl-20 flex-col'>
+    <div className='flex justify-center items-center py-6 px-4 h-full w-[90%] mx-auto'>
+        <div className='flex-1 py-8 flex justify-end items-center flex-col'>
+          <div className='text-6xl font-semibold font-urbanist px-5 flex justify-center items-center pl-20 flex-col'>
             <div>
               <p className='text-secondary'>We Create <span className='font-bold text-tertiary'>DIGITAL</span> </p>
             </div>
-            <div className='w-full flex justify-start items-baseline'>
+            <div className='w-full flex justify-center items-center'>
               <span className='text-tertiary'>Workers</span>
             </div>
             <div>

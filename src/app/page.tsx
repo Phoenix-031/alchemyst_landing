@@ -10,6 +10,8 @@ import Features from './(components)/Features'
 import ComingSoon from './(components)/ComingSoon'
 import Join from './(components)/Join'
 import Trusted from './(components)/Trusted'
+import Integration from './(components)/Integration'
+import Testimonials from './(components)/Testimonials'
 
 
 const Landing = () => {
@@ -21,12 +23,14 @@ const Landing = () => {
       <Features />
       <ComingSoon />
       <Services />
-      <Trusted />
       <Information />
+      <Trusted />
+      <Integration />
       <Join />
+      <Testimonials />
       <Footer/>
     </div>
   )
 }
 
-export default Landing;
+export default Landing

@@ -16,16 +16,10 @@ const Partners = () => {
 
   const partnersRef = React.useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-  const partenerContent = Array.from(partnersRef.current?.children || [])
+  // useEffect(() => {
+  // const partenerContent = Array.from(partnersRef.current?.children || [])
 
-  partenerContent.forEach(item => {
-    const duplicatedItem = item.cloneNode(true)
-    const duplicatedElement = duplicatedItem as HTMLElement;
-    duplicatedElement.setAttribute('aria-hidden', 'true');
-    partnersRef.current?.appendChild(duplicatedElement)
-  })
-  })
+  // })
   
   return (
     <div className='w-[90%] mx-auto py-10 px-4 flex justify-center items-center [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] overflow-hidden bg-inherit'>
