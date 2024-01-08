@@ -7,9 +7,6 @@ import aboutimage from '@/assets/aboutimage.png'
 
 const About = () => {
 
-
-
-  
   return (
     <div className='flex justify-center items-center py-6 px-4 h-full w-[90%] mx-auto'>
         <div className='flex-1 py-8 flex justify-end items-center flex-col'>
