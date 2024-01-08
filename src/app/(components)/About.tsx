@@ -4,7 +4,6 @@ import Image from 'next/image'
 
 import aboutimage from '@/assets/aboutimage.png'
 
-import gsap from 'gsap'
 
 const About = () => {
 
