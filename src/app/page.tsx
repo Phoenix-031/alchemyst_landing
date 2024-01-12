@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from './(components)/Navbar'
 import Partners from './(components)/Partners'
 import Services from './(components)/Services'
-import About from './(components)/About'
+import About from './(components)/(About)/About'
 import Information from './(components)/Information'
 import Footer from './(components)/Footer'
 import Features from './(components)/Features'
@@ -16,7 +16,7 @@ import Testimonials from './(components)/Testimonials'
 
 const Landing = () => {
   return (
-    <div className='w-full max-h-max bg-primary mx-auto'>
+    <div className='w-full max-h-max bg-primary mx-auto overflow-x-hidden'>
       <Navbar />
       <About />
       <Partners />
@@ -27,7 +27,7 @@ const Landing = () => {
       <Trusted />
       <Integration />
       <Join />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer/>
     </div>
   )

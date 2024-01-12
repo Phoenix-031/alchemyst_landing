@@ -44,21 +44,21 @@ const socialIconData = [
 
 const Integration = () => {
   return (
-    <div className='w-[80%] py-6 mx-auto'>
+    <div className='w-[100%] py-2 mx-auto my-5 desktop:w-[80%]'>
 
-        <div className='w-full py-6 px-4  font-poppins text-4xl text-tertiary font-bold text-center'>
+        <div className='w-full py-6 px-4  font-poppins text-3xl text-tertiary font-bold text-center'>
             <p>Remotely Maintain Your Data,<br /> From Anywhere, Anytime.</p>
         </div>
 
-        <div className='text-xl font-poppins font-semibold text-center text-tertiary'>
+        <div className='text-lg font-poppins font-semibold text-center text-tertiary mobile:w-[90%] mx-auto'>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet at distinctio repellat, est quod.</p>
         </div>
 
-        <div className=' flex justify-center items-center w-[80%] mx-auto h-[15rem]'>
+        <div className=' flex justify-center items-center w-[100%] mx-auto h-[10rem]'>
             {
                 socialIconData.map((social, index) => (
-                    <div key={index} className={`flex flex-1 items-center flex-col gap-2 py-4 px-2  h-[12rem] ${index%2 == 0 ? 'justify-end' : 'justify-start'}`}>
-                        <div className='w-16 h-16'>
+                    <div key={index} className={`flex flex-1 items-center flex-col gap-1 py-4  h-[10rem] ${index%2 == 0 ? 'justify-end' : 'justify-start'}`}>
+                        <div className='w-12 h-12'>
                             <Image src={social.image} alt='social icon' className='w-full h-full' />
                         </div>
                     </div>

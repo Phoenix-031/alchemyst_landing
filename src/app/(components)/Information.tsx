@@ -6,8 +6,8 @@ import infoimage from '@/assets/infoimage.png'
 
 const Information = () => {
   return (
-    <div className='w-[100%] mx-auto flex justify-center items-center flex-col gap-10 py-6'>
-        <div className='w-full flex justify-center items-center gap-4'>
+    <div className='w-full mx-auto flex justify-center items-center flex-col gap-5 py-4 desktop:w-[90%]'>
+        <div className='w-full flex justify-center items-center gap-4 flex-col desktop:flex-row'>
 
             <div className=' flex-1'>
                 <div className='w-[80%] h-[80%] mx-auto my-auto'>
@@ -15,7 +15,7 @@ const Information = () => {
                 </div>
             </div>
 
-            <div className=' flex-1 max-h-max'>
+            <div className=' flex-1 max-h-max flex justify-center items-baseline flex-col mobile:items-center'>
                 <div className='text-tertiary w-full flex justify-center items-center'>
                     <h2 className='text-3xl font-bold py-5 px-4'>They Use Our Feature-Rich <br />SaaS Platform</h2>
                 </div>
@@ -24,7 +24,7 @@ const Information = () => {
                     <p className='text-xl font-semibold text-tertiary'>We are building a feature-rich SaaS platform which <br/> Alchemyst operate within.</p>
                 </div>
 
-                <ol className='w-[80%] px-10 list-disc'>
+                <ol className='w-[80%] px-10 list-disc text-elf'>
                     <li className='text-xl font-semibold text-tertiary mb-4'>
                         <p>Either you, or your Alchemyst, can do anything within the platform</p>
                     </li>
@@ -33,8 +33,8 @@ const Information = () => {
                     </li>
                 </ol>
 
-                <div className='w-full py-4 px-4'>
-                    <button className='font-semibold text-tertiary py-3 px-5 border-[1px] border-tertiary rounded-lg '>Meet Ava</button>
+                <div className='w-full py-4 px-4 flex justify-center'>
+                    <button className='font-semibold text-tertiary py-3 px-5 border-[1px] border-tertiary rounded-lg mx-auto'>Meet Ava</button>
                 </div>
             </div>
 
@@ -42,7 +42,7 @@ const Information = () => {
 
 
 
-        <div className='w-full flex justify-center items-center gap-4'>
+        <div className='w-full flex justify-center items-center gap-4 flex-col-reverse desktop:flex-row'>
 
             <div className=' flex-1 max-h-max'>
                 <div className='text-tertiary w-full flex justify-center items-center'>
@@ -62,7 +62,7 @@ const Information = () => {
                     </li>
                 </ol> */}
 
-                <div className='text-xl font-semibold text-tertiary mb-4 flex justify-center items-center'>
+                <div className='text-xl font-semibold text-tertiary mb-4 flex justify-center items-center w-full pl-5'>
                     <p>They’ll even send you unprompted updates & suggestions.</p>
                 </div>
 
