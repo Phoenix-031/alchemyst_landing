@@ -2,6 +2,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const email = "hello@solid.com"
+const textunderemail = "We are always here to help you. Don't hesitate to contact us."
+
 const Footer = () => {
   return (
     <>
@@ -46,7 +49,7 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  {textunderemail}
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
@@ -56,7 +59,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  {email}
                 </a>
               </motion.div>
 

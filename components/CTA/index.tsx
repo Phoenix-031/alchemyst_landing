@@ -3,6 +3,10 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const heading = "Get started with Alchemyst today";
+const description =
+  "Alchemyst are a team of AI assistants that help you with your day-to-day tasks. They are powered by the latest in AI research and are designed to be as human-like as possible.";
+
 const CTA = () => {
   return (
     <>
@@ -29,12 +33,10 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-                Join With Us Today & Increase Your Productivity
+                {heading}
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                aliquam ante in maximus.
+                {description}
               </p>
             </motion.div>
             <motion.div
