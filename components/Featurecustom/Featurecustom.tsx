@@ -102,14 +102,14 @@ const FeatureCustom = () => {
 
   return (
     <div className="w-full flex justify-center items-center flex-col mx-auto py-10 px-2 bg-white">
-      <div className="text-2xl tablet:text-3xl font-bold text-center text-tertiary my-4 pb-40 font-poppins">
+      <div className="text-2xl tablet:text-2xl font-bold text-center text-tertiary my-4 pb-20 font-poppins text-gray-800">
         <p>Alchemyst Are The First Generation Of <br /> Human-Like Digital Workers</p>
       </div>
 
-      <main className="flex flex-row gap-y-32 gap-x-4 font-poppins w-full mx-auto justify-center items-center min-h-[38rem] desktop:flex-row desktop:flex-wrap">
+      <main className="flex flex-row gap-y-32 gap-x-10 font-poppins w-full mx-auto justify-center items-center min-h-[38rem] desktop:flex-row desktop:flex-wrap">
         {features.map(({image,title,description}, index) => (
         //   <FeatureCard key={index} {...feature} />
-            <div key={index} className="max-w-sm flex justify-end items-end py-2 min-w-[30rem] desktop:min-w-[22rem]">
+            <div key={index} className="max-w-sm flex justify-end items-end py-2 min-w-[25rem] desktop:min-w-[22rem]">
                 <div className="px-5 py-10 border-purple-500 border-[2.5px] rounded-xl relative h-[22rem]">
                     <Image src={image} alt={title} className="rounded-t-lg z-20 absolute top-[-45%] left-[50%] -translate-x-[50%] shadow-sm" />
                     <h5 className="text-3xl font-bold tracking-tight text-tertiary">{title}</h5>
