@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^10.18.0",
     "gsap": "^3.12.4",
     "next": "14.0.4",
+    "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
-    "sharp": "^0.33.1"
+    "react-hot-toast": "^2.4.1",
+    "sharp": "^0.33.1",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",
