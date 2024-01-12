@@ -8,7 +8,7 @@ import profile3 from '@/src/assets/profile/profile3.png';
 const profiles = [
   {
     image: profile1,
-    name: 'Ava, The Sales Rep',
+    name: 'Maya, The Sales Rep',
     description: 'Supercharge Your Outbound Sales, At Scale',
     points: [
       'Discovers leads with 250 million contacts & 65 data points',
