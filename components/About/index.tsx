@@ -191,7 +191,7 @@ const About = () => {
                 alt="About"
                 className="hidden dark:block"
                 fill
-              />
+                />
             </motion.div>
           </div>
         </div>

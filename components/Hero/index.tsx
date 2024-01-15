@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import AboutSpecial from "../About/(components)/AboutSpecial";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -58,7 +59,8 @@ const Hero = () => {
 
             <div className="animate_right hidden md:w-1/2 lg:block">
               <div className="relative 2xl:-mr-7.5">
-                <Image
+                <AboutSpecial />
+                {/* <Image
                   src="/images/shape/shape-01.png"
                   alt="shape"
                   width={46}
@@ -78,8 +80,8 @@ const Hero = () => {
                   width={21.64}
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
-                />
-                <div className=" relative aspect-[700/444] w-full">
+                /> */}
+                {/* <div className=" relative aspect-[700/444] w-full border-2 border-red-600">
                   <Image
                     className="shadow-solid-l dark:hidden"
                     src="/images/hero/hero-light.svg"
@@ -92,7 +94,7 @@ const Hero = () => {
                     alt="Hero"
                     fill
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

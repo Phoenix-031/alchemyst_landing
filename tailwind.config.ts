@@ -134,11 +134,16 @@ module.exports = {
           "0%, 100%": { transform: "translateY(100%)" },
           "50%": { transform: "translateY(0)" },
         },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-50% - 9rem))' },
+        }
       },
       animation: {
         line1: "line 3s linear infinite",
         line2: "line 6s linear infinite",
         line3: "line 9s linear infinite",
+        'infinite-scroll': 'infinite-scroll 5s linear infinite',
       },
     },
   },
