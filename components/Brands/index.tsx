@@ -24,7 +24,7 @@ const Brands = () => {
 
     
       scrollerConent.forEach((content, index) => {
-     const duplicatedItem = content.cloneNode(true)
+     const duplicatedItem = content.cloneNode(true) as Element
     //  console.log(duplicatedItem)
     duplicatedItem.setAttribute('aria-hidden', 'true')
     innerScroller.current?.appendChild(duplicatedItem)

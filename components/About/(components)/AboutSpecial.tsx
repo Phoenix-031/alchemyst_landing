@@ -14,46 +14,22 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const AboutSpecial = () => {
 
-    const layer1 = useRef(null);
-    const layer2 = useRef(null);
-    const layer3 = useRef(null);
+    const layer1 = useRef<HTMLDivElement>(null);
+    const layer2 = useRef<HTMLDivElement>(null);
+    const layer3 = useRef<HTMLDivElement>(null);
     const imageone = useRef(null);
-
-//   const layer1images = Array.from(layer1.current?.children || []).flatMap(
-//     (item) => Array.from(item.querySelectorAll('img'))
-//   );
-
-//     useLayoutEffect(() => {
-//         console.log(layer1.current?.children);
-
-//           const layer1images = Array.from(layer1.current?.children || []).flatMap(
-//     (item) => Array.from(item.querySelectorAll('img'))
-//   );
-
-//         const tl = gsap.timeline()
-
-//         tl.to(layer1images, {
-//             scale : 2,
-//             duration : 1,
-//             ease : 'power2.inOut',
-//             repeat : -1,
-//             yoyo : true,
-//         })
-
-        
-//     })
         
     useGSAP(() => {
 
-  const layer1images = Array.from(layer1.current?.children || []).flatMap(
-    (item) => Array.from(item.querySelectorAll('img'))
+const layer1images = Array.from(layer1.current?.children || [] as Iterable<Element>).flatMap(
+    (item: HTMLElement) => Array.from(item.querySelectorAll('img'))
   );
-  const layer2images = Array.from(layer2.current?.children || []).flatMap(
-    (item) => Array.from(item.querySelectorAll('img'))
+  const layer2images = Array.from(layer2.current?.children || [] as Iterable<Element>).flatMap(
+    (item :HTMLElement) => Array.from(item.querySelectorAll('img'))
     );
 
-  const layer3images = Array.from(layer3.current?.children || []).flatMap(
-    (item) => Array.from(item.querySelectorAll('img'))
+  const layer3images = Array.from(layer2.current?.children || [] as Iterable<Element>).flatMap(
+    (item : HTMLElement) => Array.from(item.querySelectorAll('img'))
     );
 
         
