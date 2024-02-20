@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
+import alchemystnavimg from '@/src/assets/alchemystnavimg.png'
+
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [dropdownToggler, setDropdownToggler] = useState(false);
@@ -37,22 +39,12 @@ const Header = () => {
     >
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
+          {/* removed image present initially due to responsive issues */}
+          {/* <div className="border-2 border-black border-solid overflow-hidden">
+            <Image src={alchemystnavimg} alt="alchemy logo" height={80} className="rounded-md w-full h-full" />
+          </div> */}
           <a href="/" className="text-bold text-2xl">
-            ALchemyst
-            {/* <Image
-              src="/images/logo/logo-dark.svg"
-              alt="logo"
-              width={119.03}
-              height={30}
-              className="hidden w-full dark:block"
-            /> */}
-            {/* <Image
-              src="/images/logo/logo-light.svg"
-              alt="logo"
-              width={119.03}
-              height={30}
-              className="w-full dark:hidden"
-            /> */}
+            ALCHEMYST AI
           </a>
 
           {/* <!-- Hamburger Toggle BTN --> */}

@@ -3,6 +3,13 @@ import Image from "next/image";
 import { useState } from "react";
 import AboutSpecial from "../About/(components)/AboutSpecial";
 
+import aboutimg from  '@/src/assets/aboutimage.png'
+import heroimg from '@/src/assets/bgimg1.png'
+
+import localFont from 'next/font/local'
+
+// const myFont = localFont({src :'public/fonts/Lastica.ttf',variable: '--font-lastica' })
+
 const Hero = () => {
   const [email, setEmail] = useState("");
 
@@ -12,8 +19,12 @@ const Hero = () => {
 
   return (
     <>
-      <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
-        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+      {/* <Image src={aboutimg} alt="Hero" /> */}
+      <section className={`overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46 relative `}>
+        {/* <div className=" absolute top-0 left-0 w-full h-full -z-20">
+          <Image src={heroimg} alt="Hero" />
+        </div> */}
+        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0  ">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
@@ -59,42 +70,9 @@ const Hero = () => {
 
             <div className="animate_right hidden md:w-1/2 lg:block">
               <div className="relative 2xl:-mr-7.5">
-                <AboutSpecial />
-                {/* <Image
-                  src="/images/shape/shape-01.png"
-                  alt="shape"
-                  width={46}
-                  height={246}
-                  className="absolute -left-11.5 top-0"
-                />
-                <Image
-                  src="/images/shape/shape-02.svg"
-                  alt="shape"
-                  width={36.9}
-                  height={36.7}
-                  className="absolute bottom-0 right-0 z-10"
-                />
-                <Image
-                  src="/images/shape/shape-03.svg"
-                  alt="shape"
-                  width={21.64}
-                  height={21.66}
-                  className="absolute -right-6.5 bottom-0 z-1"
-                /> */}
-                {/* <div className=" relative aspect-[700/444] w-full border-2 border-red-600">
-                  <Image
-                    className="shadow-solid-l dark:hidden"
-                    src="/images/hero/hero-light.svg"
-                    alt="Hero"
-                    fill
-                  />
-                  <Image
-                    className="hidden shadow-solid-l dark:block"
-                    src="/images/hero/hero-dark.svg"
-                    alt="Hero"
-                    fill
-                  />
-                </div> */}
+                <div className="overflow-hidden">
+                  <Image src={aboutimg} alt="Hero" className="w-[150vw] h-[120%]" />
+                </div>
               </div>
             </div>
           </div>

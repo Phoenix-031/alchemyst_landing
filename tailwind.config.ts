@@ -14,6 +14,12 @@ module.exports = {
       inter: ["Inter", "sans-serif"],
     },
     extend: {
+      // fontFamily: {
+      //   lastica: ["Lastica", "sans-serif"],
+      // },
+      backgroundImage:{
+        'herobg' : "url('./src/assets/bgimg1.png')",
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
